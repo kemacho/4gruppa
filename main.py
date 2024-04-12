@@ -15,10 +15,6 @@ class TRoad:
       for k in range(len(self.road)):
         if self.road[k] == 'O':
           O.append(k)
-      #if O != []:
-        #self.__move_car()
-        #self.__add()
-        #print("alo alo")
       for l in range(len(O)):
         self.road[O[l]] = 'R'
     
@@ -115,5 +111,5 @@ class TRoad:
     self.__print()
 
 
-T = TRoad(road="C...R..R...R..GG....G", n=40, new_road = [])
+T = TRoad(road="C...R....R....R..GG....G", n=35, new_road = [])
 T.simulate_traffic()
